@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+#cabecalho {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f5d742;
+}
+
+
+
+#banner {
+    width: 100%;
+    max-height: 350px;
+    
+}
+
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    background-color: #000;
+}
+
+#menu li {
+    padding: 10px 20px;
+    background-color: #222;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#menu li:hover {
+    background-color: #f5d742;
+    color: #000;
+    cursor: pointer;
+}
+#menu ul li a{
+    color:#fff ;
+    text-decoration: none;
+}
+
+
+.intro {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color:#f5d742;
+}
+.intro p{
+    font-size: 20px;
+}
+
+.slider{
+    text-align: center;
+}
+
+.slider {
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.biografia {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.biografia h2 {
+    font-size: 32px;
+    color: #f5d742;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.biografia img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.biografia p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ddd;
+}
+.discografia {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.discografia h2 {
+    text-align: center;
+    color: #f5d742;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.discografia .info_spotify {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+.grade-albuns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;}
+
+.album {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+}
+
+
+.album img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.album h3 {
+    color: #f5d742;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.album p {
+    color: #ddd;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+.integrantes {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #181818;
+    color: #fff;
+}
+
+.integrantes h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #f5d742;
+}
+.info-integrantes {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.membro {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+}
+
+.membro:hover {
+    transform: scale(1.05);
+}
+
+.membro img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.membro h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.membro p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.curiosidades-lista {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+.curiosidades-lista li {
+    background-color: #1e1e1e;
+    border-left: 4px solid #f5d742;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #000;
+}
+.legado {
+    background-color: #121212;
+    padding: 40px 20px;
+    color: #f0f0f0;
+}
+
+.legado-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.legado-conteudo h2 {
+    text-align: center;
+    color: #f5d742;
+    margin-bottom: 20px;
+}
+
+.legado-conteudo blockquote {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 5px solid #f5d742;
+    font-style: italic;
+    color: #f5d742;
+}
+
+.legado-imagem {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.legado-imagem img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.legado-imagem figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+#rodape {
+    background-color: #1e1e1e;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+#rodape a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+    color: #f5d742;
+}
+
+
+

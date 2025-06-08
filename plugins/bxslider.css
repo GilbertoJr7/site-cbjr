@@ -1,0 +1,58 @@
+
+.bx-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 2 / 1; 
+  margin: 0 auto;
+  background: #121212;
+  border: 5px solid #121212;
+  box-shadow: 0 0 5px #121212;
+  overflow: hidden;
+}
+
+
+.bx-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.bx-wrapper .bx-pager {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 10px;
+  height: 10px;
+  background: #666;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: -9999px;
+  transition: background 0.3s;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .bx-wrapper {
+    aspect-ratio: auto;
+    height: 200px;
+  }
+
+  .bx-wrapper img {
+    height: 200px;
+  }
+}
